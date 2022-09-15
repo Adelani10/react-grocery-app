@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.danger{
+    background-color: whitesmoke;
+    color: red;
+}
+.success{
+    background-color: whitesmoke;
+    color: green
+}

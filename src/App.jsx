@@ -85,7 +85,7 @@ function App() {
 
   const listElements = groceryList.map((item, index) => {
     return <main key={index} className="flex justify-between items-center md:tracking-widest font-semibold">
-              <p className="text-white text-3xl max-w-[85%]">{item.value}</p>
+              <p className="text-white text-3xl md:max-w-[85%] max-w-[75%]">{item.value}</p>
               <div className="space-x-5">
                 <button onClick={()=> editItem(item.id)} className='text-[#f5f5f5] text-xl'>
                   <i className="fa-solid fa-pen-to-square"></i>
@@ -104,7 +104,7 @@ function App() {
           <h1 className="font-bold text-3xl md:text-5xl">
               Groceries
           </h1>
-          <p className="text-xs md:text-sm font-thin">
+          <p className="text-xs md:text-sm font-semibold">
             ...nothing worse than forgetting to get those carrots!
           </p>
       </section>
@@ -133,7 +133,7 @@ function App() {
 
         </form>
 
-        <article className='md:w-[70%]  w-full md:space-y-4 pb-12 space-y-2'>
+        <article className='md:w-[70%]  w-full md:space-y-4 pb-24 space-y-2'>
             {listElements}
         </article>
       </div>
@@ -143,7 +143,7 @@ function App() {
                       setGroceryList([])
                       displayAlert(true, 'item list cleared', 'danger')
                     }} 
-              className='font-extrabold absolute bottom-0 right-0 left-0 w-[50%] md:w-[25%] mx-auto my-12 tracking-widest border-4 border-white px-2 h-12 hover:border-0 hover:bg-red-700 hover:text-white'>Empty List</button>}
+              className='font-extrabold absolute bottom-10 md:bottom-0 right-0 left-0 w-[50%] md:w-[25%] mx-auto my-12 tracking-widest border-4 border-white px-2 h-12 hover:border-0 hover:bg-red-700 hover:text-white'>Empty List</button>}
       
       
     </div>

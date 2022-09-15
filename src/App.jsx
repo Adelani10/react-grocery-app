@@ -38,7 +38,6 @@ function App() {
       displayAlert(true, 'one item edited', 'success')
     }
     else{
-      setGroceryList(groceryList)
       displayAlert(true, 'Please enter an item', 'danger')
     }
 
